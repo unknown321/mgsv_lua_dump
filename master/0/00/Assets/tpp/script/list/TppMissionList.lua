@@ -198,7 +198,8 @@ TppHostage2.SetHostageType{gameObjectType="TppHostage2",hostageType="Mob"}end
 s[65020]={"/Assets/tpp/pack/show/e3_2014/s65020/s65020_area.fpk","/Assets/tpp/pack/location/afgh/pack_common/afgh_script.fpk"}s[65030]={"/Assets/tpp/pack/show/e3_2014/s65030/s65030_area.fpk"}s[65050]={"/Assets/tpp/pack/show/e3_2014/s65050/s65050_area.fpk"}s[65414]={"/Assets/tpp/pack/show/gc_2014/s65414/s65414_area.fpk"}s[65060]=function(p)TppPackList.AddMissionPack"/Assets/tpp/pack/show/tgs_2014/s65060/s65060_area.fpk"TppPackList.AddLocationCommonScriptPack(p)do
 local s="hos_s65060_0000"local s={{type="hostage",name=s,faceId=621,bodyId=111}}TppEneFova.AddUniqueSettingPackage(s)end
 end
-s[65415]={"/Assets/tpp/pack/show/tgs_2014/s65415/s65415_area.fpk"}s[65416]={"/Assets/tpp/pack/show/tgs_2014/s65416/s65416_area.fpk"}s[50050]=function(s)local p=TppEnemy.GetDDSuit()if p==TppEnemy.FOB_DD_SUIT_SNEAKING then
+s[65415]={"/Assets/tpp/pack/show/tgs_2014/s65415/s65415_area.fpk"}s[65416]={"/Assets/tpp/pack/show/tgs_2014/s65416/s65416_area.fpk"}s[50050]=function(s)local p=TppEnemy.GetDDSuit()if TppMotherBaseManagement.GetMbsClusterSecurityIsEquipSwimSuit()then
+TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_SWIM_SUIT)elseif p==TppEnemy.FOB_DD_SUIT_SNEAKING then
 TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_SNEAKING)elseif p==TppEnemy.FOB_DD_SUIT_BTRDRS then
 TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_BTRDRS)elseif p==TppEnemy.FOB_PF_SUIT_ARMOR then
 TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_ARMOR)else

@@ -36,7 +36,7 @@ mvars.dem_tempPlayerInfo.playerPartsType=vars.playerPartsType
 mvars.dem_tempPlayerInfo.playerCamoType=vars.playerCamoType
 mvars.dem_tempPlayerInfo.playerFaceId=vars.playerFaceId
 mvars.dem_tempPlayerInfo.playerFaceEquipId=vars.playerFaceEquipId
-TppPlayer.ForceChangePlayerToSnake(true)mvars.dem_tempPlayerReloadCounter={}mvars.dem_tempPlayerReloadCounter.start=0
+mvars.dem_tempPlayerSuitLevel=Player.GetItemLevel(TppEquip.EQP_SUIT)TppPlayer.ForceChangePlayerToSnake(true)mvars.dem_tempPlayerReloadCounter={}mvars.dem_tempPlayerReloadCounter.start=0
 mvars.dem_tempPlayerReloadCounter.finish=0
 return true
 end,demoBlockLoaded=function(e)TppScriptBlock.RequestActivate"demo_block"return true
@@ -110,6 +110,9 @@ mvars.dem_donePlayerRestoreFadeOut=true
 TppUI.FadeOut(TppUI.FADE_SPEED.FADE_MOMENT)end
 for e,n in pairs(mvars.dem_tempPlayerInfo)do
 vars[e]=n
+end
+if mvars.dem_tempPlayerSuitLevel then
+Player.SetItemLevel(TppEquip.EQP_SUIT,mvars.dem_tempPlayerSuitLevel)mvars.dem_tempPlayerSuitLevel=nil
 end
 mvars.dem_tempPlayerInfo=nil
 return true

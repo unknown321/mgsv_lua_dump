@@ -8,8 +8,8 @@ TppUiCommand.CreateResidentBlockController(338*1024,"/Assets/tpp/pack/ui/ui_resi
 else
 TppUiCommand.CreateResidentBlockController(460*1024,"/Assets/tpp/pack/ui/gz/gz_ui_resident_data.fpk")end
 TppUiCommand.UiPlatFormSetting()TppUiCommand.UiAreaSetting()if TppGameSequence.GetTargetArea()=="ChinaKorea"then
-LanguageBlock.Create(665*1024)LanguageBlock.Create(96*1024)else
-LanguageBlock.Create(685*1024)LanguageBlock.Create(96*1024)end
+LanguageBlock.Create(670*1024)LanguageBlock.Create(96*1024)else
+LanguageBlock.Create(690*1024)LanguageBlock.Create(96*1024)end
 if Fox.GetPlatformName()=="Windows"then
 if Editor then
 TppUiCommand.SetVarsLanguage(8)else

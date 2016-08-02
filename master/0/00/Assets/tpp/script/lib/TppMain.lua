@@ -246,7 +246,7 @@ TppDemo.UpdateNuclearAbolitionFlag()TppQuest.AcquireKeyItemOnMissionStart()end
 function e.SetUpdateFunction(e)a={}p=0
 c={}o=0
 T={}u=0
-a={TppMission.Update,TppSequence.Update,TppSave.Update,TppDemo.Update,TppPlayer.Update,TppMission.UpdateForMissionLoad,DropWeapon.Update}p=#a
+a={TppMission.Update,TppSequence.Update,TppSave.Update,TppDemo.Update,TppPlayer.Update,TppMission.UpdateForMissionLoad}p=#a
 for n,e in pairs(e)do
 if t(e.OnUpdate)then
 o=o+1

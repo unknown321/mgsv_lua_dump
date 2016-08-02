@@ -219,12 +219,14 @@ return
 end
 return e._AddUniqueVolunteerStaff(t,n)end
 function e.AcquirePrivilegeInTitleScreen()e.AcquireGzPrivilegeKeyItem()e.AcquireDlcItemKeyItem()e.AcquireDlcItemEmblem()end
-function e.AcquireGzPrivilegeKeyItem()local t={SAVEDATA_EXIST=t.EXTRA_4011,CLEAR_MISSION_20060=t.EXTRA_4012}local function n(e)local e=t[e]TppMotherBaseManagement.DirectAddDataBase{dataBaseId=e,isNew=true}return true
+function e.AcquireGzPrivilegeKeyItem()local n={SAVEDATA_EXIST=t.EXTRA_4011,CLEAR_MISSION_20060=t.EXTRA_4012}local function a(e)local e=n[e]TppMotherBaseManagement.DirectAddDataBase{dataBaseId=e,isNew=true}return true
 end
-for t,a in pairs(t)do
-e.AcquireGzPrivilege(t,n)end
+for t,n in pairs(n)do
+e.AcquireGzPrivilege(t,a)end
+if TppMotherBaseManagement.IsGotDataBase{dataBaseId=t.EXTRA_4011}then
+TppMotherBaseManagement.DirectAddDataBase{dataBaseId=t.EXTRA_6000,isNew=false}end
 end
-function e.AcquireDlcItemKeyItem()local n={WEAPON_MACHT_P5_WEISS=t.EXTRA_4000,WEAPON_RASP_SB_SG_GOLD=t.EXTRA_4001,WEAPON_PB_SHIELD_SIL=t.EXTRA_4002,WEAPON_PB_SHIELD_OD=t.EXTRA_4003,WEAPON_PB_SHIELD_WHT=t.EXTRA_4004,WEAPON_PB_SHIELD_GLD=t.EXTRA_4005,ITEM_CBOX_APD=t.EXTRA_4006,ITEM_CBOX_RT=t.EXTRA_4007,ITEM_CBOX_WET=t.EXTRA_4008,SUIT_FATIGUES_APD=t.EXTRA_4015,SUIT_FATIGUES_GRAY_URBAN=t.EXTRA_4016,SUIT_FATIGUES_BLUE_URBAN=t.EXTRA_4017,SUIT_FATIGUES_BLACK_OCELOT=t.EXTRA_4018,WEAPON_ADAM_SKA_SP=t.EXTRA_4024,WEAPON_WU_S333_CB_SP=t.EXTRA_4025,SUIT_MGS3_NORMAL=t.EXTRA_4019,SUIT_MGS3_SNEAK=t.EXTRA_4022,SUIT_MGS3_TUXEDO=t.EXTRA_4023,SUIT_THE_BOSS=t.EXTRA_4026,SUIT_EVA=t.EXTRA_4027,HORSE_WESTERN=t.EXTRA_4028,HORSE_PARADE=t.EXTRA_4009}local function o(t,e)local e=n[e]TppMotherBaseManagement.DirectAddDataBase{dataBaseId=e,isNew=true}return true
+function e.AcquireDlcItemKeyItem()local n={WEAPON_MACHT_P5_WEISS=t.EXTRA_4000,WEAPON_RASP_SB_SG_GOLD=t.EXTRA_4001,WEAPON_PB_SHIELD_SIL=t.EXTRA_4002,WEAPON_PB_SHIELD_OD=t.EXTRA_4003,WEAPON_PB_SHIELD_WHT=t.EXTRA_4004,WEAPON_PB_SHIELD_GLD=t.EXTRA_4005,ITEM_CBOX_APD=t.EXTRA_4006,ITEM_CBOX_RT=t.EXTRA_4007,ITEM_CBOX_WET=t.EXTRA_4008,SUIT_FATIGUES_APD=t.EXTRA_4015,SUIT_FATIGUES_GRAY_URBAN=t.EXTRA_4016,SUIT_FATIGUES_BLUE_URBAN=t.EXTRA_4017,SUIT_FATIGUES_BLACK_OCELOT=t.EXTRA_4018,WEAPON_ADAM_SKA_SP=t.EXTRA_4024,WEAPON_WU_S333_CB_SP=t.EXTRA_4025,SUIT_MGS3_NORMAL=t.EXTRA_4019,SUIT_MGS3_SNEAK=t.EXTRA_4022,SUIT_MGS3_TUXEDO=t.EXTRA_4023,SUIT_THE_BOSS=t.EXTRA_4026,SUIT_EVA=t.EXTRA_4027,HORSE_WESTERN=t.EXTRA_4028,HORSE_PARADE=t.EXTRA_4009,ARM_GOLD=t.EXTRA_6000}local function o(t,e)local e=n[e]TppMotherBaseManagement.DirectAddDataBase{dataBaseId=e,isNew=true}return true
 end
 local function r(a,e)local a=Fox.GetPlatformName()local e=n[e]if a=="Xbox360"or a=="XboxOne"then
 if((e==t.EXTRA_4025)or(e==t.EXTRA_4003))or(e==t.EXTRA_4008)then
