@@ -6,7 +6,7 @@ local StrCode32Table = Tpp.StrCode32Table
 
 
 this.demoBlockList = {
-	Demo_Opening				=	"/Assets/tpp/pack/mission2/story/s10140/s10140_d01.fpk",
+	Demo_Opening				=	"/Assets/tpp/pack/mission2/story/s10050/s10050_d01.fpk",
 	Demo_CodeTalker_Evacuate	= 	"/Assets/tpp/pack/mission2/story/s10140/s10140_d01.fpk",
 	Demo_Inside_Heli			=	"/Assets/tpp/pack/mission2/story/s10140/s10140_d02.fpk",
 	Demo_TorturedHueyAtMB		=	"/Assets/tpp/pack/mission2/story/s10140/s10140_d03.fpk",
