@@ -141,6 +141,8 @@ TppEnemy.LoadSoldier2CommonBlock()end
 if n.sequence then
 mvars.mis_baseList=n.sequence.baseList
 TppCheckPoint.RegisterCheckPointList(n.sequence.checkPointList)end
+if not TppMission.IsFOBMission(vars.missionCode)then
+TppPlayer.ForceChangePlayerFromOcelot()end
 end
 function e.OnInitialize(n)if TppMission.IsFOBMission(vars.missionCode)then
 TppMission.SetFobPlayerStartPoint()elseif TppMission.IsNeedSetMissionStartPositionToClusterPosition()then

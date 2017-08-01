@@ -1239,7 +1239,7 @@ gvars.usingNormalMissionSlot=false
 e.GoToEmergencyMission()end
 end
 function e.GetNextMissionCodeForEmergency()return(mvars.mis_emergencyMissionCode or gvars.mis_nextMissionCodeForEmergency)end
-function e.OnAbortMissionPreparation()e.SetNextMissionCodeForMissionClear(u)gvars.heli_missionStartRoute=0
+function e.OnAbortMissionPreparation()TppPlayer.ForceChangePlayerFromOcelot()e.SetNextMissionCodeForMissionClear(u)gvars.heli_missionStartRoute=0
 end
 function e.WaitFinishMissionEndPresentation()while(not TppUiCommand.IsEndMissionTelop())do
 if TppUiCommand.KeepMissionStartTelopBg then

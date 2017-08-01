@@ -4,8 +4,8 @@ TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.AFGH_SCRIPT)TppPackList
 TppPackList.AddMissionPack"/Assets/tpp/pack/mission2/common/title_sequence.fpk"TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.HELICOPTER)TppPackList.AddMissionPack"/Assets/tpp/pack/mission2/story/s10010/s10010_l01.fpk"TppHostage2.SetHostageType{gameObjectType="TppHostageUnique",hostageType="Ishmael"}if TppHostage2.SetHostageType then
 TppHostage2.SetHostageType{gameObjectType="TppHostage2",hostageType="MobCyprus"}TppHostage2.SetHostageType{gameObjectType="TppHostageUnique2",hostageType="MobCyprus"}end
 if TppHostage2.SetUniquePartsPath then
-local s={awake_doctor="/Assets/tpp/parts/chara/dct/dct1_main0_def_v00.parts",dct_p21_010410_0000="/Assets/tpp/parts/chara/dct/dct0_main0_def_v00.parts",dct_p21_010410_0001="/Assets/tpp/parts/chara/dct/dct0_main0_def_v00.parts",awake_nurse="/Assets/tpp/parts/chara/nrs/nrs2_main0_def_v00.parts",nrs_p21_010360_0000="/Assets/tpp/parts/chara/nrs/nrs0_main0_def_v00.parts",nrs_p21_010410_0000="/Assets/tpp/parts/chara/nrs/nrs0_main0_def_v00.parts",nrs_p21_010410_0001="/Assets/tpp/parts/chara/nrs/nrs0_main0_def_v00.parts",nrs_p21_010410_0002="/Assets/tpp/parts/chara/nrs/nrs0_main0_def_v00.parts"}for s,p in pairs(s)do
-TppHostage2.SetUniquePartsPath{gameObjectType="TppHostageUnique2",locatorName=s,parts=p}end
+local s={awake_doctor="/Assets/tpp/parts/chara/dct/dct1_main0_def_v00.parts",dct_p21_010410_0000="/Assets/tpp/parts/chara/dct/dct0_main0_def_v00.parts",dct_p21_010410_0001="/Assets/tpp/parts/chara/dct/dct0_main0_def_v00.parts",awake_nurse="/Assets/tpp/parts/chara/nrs/nrs2_main0_def_v00.parts",nrs_p21_010360_0000="/Assets/tpp/parts/chara/nrs/nrs0_main0_def_v00.parts",nrs_p21_010410_0000="/Assets/tpp/parts/chara/nrs/nrs0_main0_def_v00.parts",nrs_p21_010410_0001="/Assets/tpp/parts/chara/nrs/nrs0_main0_def_v00.parts",nrs_p21_010410_0002="/Assets/tpp/parts/chara/nrs/nrs0_main0_def_v00.parts"}for p,s in pairs(s)do
+TppHostage2.SetUniquePartsPath{gameObjectType="TppHostageUnique2",locatorName=p,parts=s}end
 local s={ish_p21_010410_0000="/Assets/tpp/parts/chara/ish/ish0_main0_def_v00.parts"}for p,s in pairs(s)do
 TppHostage2.SetUniquePartsPath{gameObjectType="TppHostage2",locatorName=p,parts=s}end
 end
@@ -28,7 +28,7 @@ s[10040]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLoc
 local a="sol_s10040_0000"local p="sol_s10040_0001"local s="sol_s10040_0002"local s={{type="enemy",name=a,faceId=603,bodyId=TppEnemyBodyId.svs0_unq_v040},{type="enemy",name=p,faceId=604,bodyId=TppEnemyBodyId.svs0_unq_v050},{type="enemy",name=s,faceId=605,bodyId=TppEnemyBodyId.svs0_unq_v060}}TppEneFova.AddUniqueSettingPackage(s)end
 end
 s[10041]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.AFGH_HOSTAGE)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_LV)TppPackList.AddDefaultMissionAreaPack(p)do
-local a="sol_vip_field"local s="sol_vip_village"local p="sol_vip_enemyBase"local s={{type="enemy",name=a,faceId=637,bodyId=268},{type="enemy",name=s,faceId=638,bodyId=269},{type="enemy",name=p,faceId=639,bodyId=270}}TppEneFova.AddUniqueSettingPackage(s)end
+local a="sol_vip_field"local p="sol_vip_village"local s="sol_vip_enemyBase"local s={{type="enemy",name=a,faceId=637,bodyId=268},{type="enemy",name=p,faceId=638,bodyId=269},{type="enemy",name=s,faceId=639,bodyId=270}}TppEneFova.AddUniqueSettingPackage(s)end
 end
 s[10043]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.AFGH_HOSTAGE)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_TRUCK)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_TRUCK_MATERIAL)TppPackList.AddDefaultMissionAreaPack(p)end
 s[10044]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.AFGH_HOSTAGE)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_TRUCK)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_WAV)TppPackList.AddDefaultMissionAreaPack(p)do
@@ -37,7 +37,7 @@ TppSoldierFace.OverwriteMissionFovaData{face=s,body=p}end
 end
 end
 s[10052]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.AFGH_HOSTAGE)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_LV)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_WAV)TppPackList.AddDefaultMissionAreaPack(p)do
-local s="hos_target_0000"local p="sol_s10052_transportVehicle_0000"local s={{type="hostage",name=s,faceId=607,bodyId=200},{type="enemy",name=p,faceId=608,bodyId=263}}TppEneFova.AddUniqueSettingPackage(s)end
+local p="hos_target_0000"local s="sol_s10052_transportVehicle_0000"local s={{type="hostage",name=p,faceId=607,bodyId=200},{type="enemy",name=s,faceId=608,bodyId=263}}TppEneFova.AddUniqueSettingPackage(s)end
 end
 s[10054]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.AFGH_HOSTAGE)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.ENEMY_HELI)TppPackList.AddMissionPack(TppHelicopter.GetEnemyColoringPack(TppDefine.ENEMY_HELI_COLORING_TYPE.BLACK))TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_LV)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_TRUCK)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_TRUCK_AMMUNITION)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_TRUCK_MATERIAL)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_TANK)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_WAV)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.EAST_WAV_ROCKET)TppPackList.AddDefaultMissionAreaPack(p)do
 local p="hos_s10054_0002"local s="hos_s10054_0004"local s={{type="hostage",name=p,faceId="female",bodyId=113},{type="hostage",name=s,faceId="female",bodyId=113}}TppEneFova.AddUniqueSettingPackage(s)end
@@ -53,19 +53,19 @@ TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WALKERGEAR)TppPackList.
 TppPackList.AddMissionPack"/Assets/tpp/pack/mission2/story/s10080/s10080_area01.fpk"end
 end
 s[10086]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MAFR_HOSTAGE)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MAFR_HOSTAGE_WOMAN)TppPackList.AddDefaultMissionAreaPack(p)do
-local p="hos_mis_0000"local s="hos_mis_0001"local e="hos_mis_0002"local t="hos_mis_0003"local i="sol_interpreter"local a="sol_interrogator"local s={{type="hostage",name=p,faceId=610,bodyId=111},{type="hostage",name=s,faceId=611,bodyId=111},{type="hostage",name=e,faceId=612,bodyId=111},{type="hostage",name=t,faceId="female",bodyId=113},{type="enemy",name=i,faceId=609,bodyId=255},{type="enemy",name=a,faceId=629,bodyId=TppEnemyBodyId.pfs0_unq_v155}}TppEneFova.AddUniqueSettingPackage(s)end
+local s="hos_mis_0000"local a="hos_mis_0001"local p="hos_mis_0002"local e="hos_mis_0003"local t="sol_interpreter"local i="sol_interrogator"local s={{type="hostage",name=s,faceId=610,bodyId=111},{type="hostage",name=a,faceId=611,bodyId=111},{type="hostage",name=p,faceId=612,bodyId=111},{type="hostage",name=e,faceId="female",bodyId=113},{type="enemy",name=t,faceId=609,bodyId=255},{type="enemy",name=i,faceId=629,bodyId=TppEnemyBodyId.pfs0_unq_v155}}TppEneFova.AddUniqueSettingPackage(s)end
 end
 s[10082]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MAFR_HOSTAGE)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WALKERGEAR)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_TRUCK)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_TRUCK_ITEMBOX)TppPackList.AddDefaultMissionAreaPack(p)end
 s[10090]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_TRUCK)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_TRUCK_HOOD)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_WAV)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_WAV_CANNON)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_WAV_MACHINE_GUN)TppPackList.AddDefaultMissionAreaPack(p)end
 s[10121]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.ENEMY_HELI)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_TRUCK)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_LV)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WALKERGEAR)TppPackList.AddMissionPack(TppHelicopter.GetEnemyColoringPack(TppDefine.ENEMY_HELI_COLORING_TYPE.BLACK))TppPackList.AddDefaultMissionAreaPack(p)do
-local s="sol_pfCamp_vip_0001"local p="sol_pfCamp_vip_guard"local s={{type="enemy",name=s,faceId=617,bodyId=TppEnemyBodyId.pfa0_v00_b},{type="enemy",name=p,faceId=618,bodyId=254}}TppEneFova.AddUniqueSettingPackage(s)end
+local p="sol_pfCamp_vip_0001"local s="sol_pfCamp_vip_guard"local s={{type="enemy",name=p,faceId=617,bodyId=TppEnemyBodyId.pfa0_v00_b},{type="enemy",name=s,faceId=618,bodyId=254}}TppEneFova.AddUniqueSettingPackage(s)end
 end
 s[10091]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.RAVEN)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.JACKAL)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_TRUCK)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_TRUCK_CONTAINER)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_LV)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MAFR_HOSTAGE)TppPackList.AddDefaultMissionAreaPack(p)do
 local s={{type="hostage",name="hos_s10091_0001",faceId="dd",bodyId=176},{type="hostage",name="hos_s10091_0000",faceId="dd",bodyId=143}}TppEneFova.AddUniqueSettingPackage(s)end
 end
 s[10100]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.HELICOPTER)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_WAV)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_WAV_CANNON)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.ENEMY_HELI)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MAFR_DECOY)TppPackList.AddMissionPack"/Assets/tpp/pack/mission2/common/mis_com_mafr.fpk"TppPackList.AddDefaultMissionAreaPack(p)do
 local o="sol_target_0000"local s=EnemyFova.INVALID_FOVA_VALUE
-local t="hos_diamond_0000"local i="hos_diamond_0001"local e="hos_diamond_0002"local p="hos_diamond_0003"local a="hos_diamond_0004"local s={{type="enemy",name=o,faceId=616,bodyId=251},{type="hostage",name=t,faceId=s,bodyId=130},{type="hostage",name=i,faceId=s,bodyId=131},{type="hostage",name=e,faceId=s,bodyId=132},{type="hostage",name=p,faceId=s,bodyId=133},{type="hostage",name=a,faceId=s,bodyId=134}}TppEneFova.AddUniqueSettingPackage(s)end
+local e="hos_diamond_0000"local t="hos_diamond_0001"local a="hos_diamond_0002"local i="hos_diamond_0003"local p="hos_diamond_0004"local s={{type="enemy",name=o,faceId=616,bodyId=251},{type="hostage",name=e,faceId=s,bodyId=130},{type="hostage",name=t,faceId=s,bodyId=131},{type="hostage",name=a,faceId=s,bodyId=132},{type="hostage",name=i,faceId=s,bodyId=133},{type="hostage",name=p,faceId=s,bodyId=134}}TppEneFova.AddUniqueSettingPackage(s)end
 TppHostage2.SetHostageType{gameObjectType="TppHostageUnique",hostageType="MovingChild"}end
 s[10110]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.HELICOPTER)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_LV)if TppPackList.IsMissionPackLabel"AfterVolginDemo"then
 TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MANTIS)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.VOLGIN)TppPackList.AddMissionPack"/Assets/tpp/pack/mission2/story/s10110/s10110_area02.fpk"else
@@ -77,13 +77,13 @@ s[10195]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLoc
 local s="sol_dealer"local p="sol_vip"local s={{type="enemy",name=s,faceId=614,bodyId=250},{type="enemy",name=p,faceId=615,bodyId=256}}TppEneFova.AddUniqueSettingPackage(s)end
 end
 s[10115]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.HELICOPTER)TppPackList.AddDefaultMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MTBS_DECOY)TppPackList.AddFOBLayoutPack(p)do
-local t="hos_s10115_0000"local e="hos_s10115_0001"local i="hos_s10115_0002"local p="hos_s10115_0003"local a="hos_s10115_0004"local s="hos_s10115_0005"local s={{type="hostage",name=t,faceId="dd",bodyId=143},{type="hostage",name=e,faceId="dd",bodyId=143},{type="hostage",name=i,faceId="dd",bodyId=143},{type="hostage",name=p,faceId="dd",bodyId=143},{type="hostage",name=a,faceId="dd",bodyId=143},{type="hostage",name=s,faceId="dd",bodyId=143}}TppEneFova.AddUniqueSettingPackage(s)end
+local a="hos_s10115_0000"local t="hos_s10115_0001"local e="hos_s10115_0002"local i="hos_s10115_0003"local s="hos_s10115_0004"local p="hos_s10115_0005"local s={{type="hostage",name=a,faceId="dd",bodyId=143},{type="hostage",name=t,faceId="dd",bodyId=143},{type="hostage",name=e,faceId="dd",bodyId=143},{type="hostage",name=i,faceId="dd",bodyId=143},{type="hostage",name=s,faceId="dd",bodyId=143},{type="hostage",name=p,faceId="dd",bodyId=143}}TppEneFova.AddUniqueSettingPackage(s)end
 end
 s[10120]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.CHILD_SOLDIER)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.LIQUID)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MAFR_HOSTAGE_WOMAN)TppPackList.AddDefaultMissionAreaPack(p)do
 local s="hos_mis_woman"local s={{type="hostage",name=s,faceId="female",bodyId=113}}TppEneFova.AddUniqueSettingPackage(s)end
 end
 s[10085]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MAFR_HOSTAGE)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MAFR_HOSTAGE_WOMAN)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_LV)TppPackList.AddDefaultMissionAreaPack(p)do
-local p="hos_target_0000"local s="hos_target_0001"local p={{type="hostage",name=p,faceId=642,bodyId=111}}local s={{type="hostage",name=s,faceId=643,bodyId=113}}TppEneFova.AddUniqueSettingPackage(p)TppEneFova.AddUniqueSettingPackage(s)end
+local s="hos_target_0000"local p="hos_target_0001"local s={{type="hostage",name=s,faceId=642,bodyId=111}}local p={{type="hostage",name=p,faceId=643,bodyId=113}}TppEneFova.AddUniqueSettingPackage(s)TppEneFova.AddUniqueSettingPackage(p)end
 end
 s[10211]=function(p)TppPackList.AddLocationCommonScriptPack(p)TppPackList.AddLocationCommonMissionAreaPack(p)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MAFR_HOSTAGE)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.WEST_LV)TppPackList.AddDefaultMissionAreaPack(p)do
 local s="sol_mis_0000"local s={{type="enemy",name=s,faceId=620,bodyId=253}}TppEneFova.AddUniqueSettingPackage(s)end
@@ -146,18 +146,18 @@ TppDemo.UpdateMBDemo()local s=TppDemo.GetMBDemoName()if TppDemo.IsQuestStart()an
 TppDemo.SetNextMBDemo(nil)end
 end
 end
-local s=TppDemo.IsUseMBDemoStage(TppDemo.GetMBDemoName())if TppPackList.IsMissionPackLabel"DemoStage"then
-s=true
+local a=TppDemo.IsUseMBDemoStage(TppDemo.GetMBDemoName())if TppPackList.IsMissionPackLabel"DemoStage"then
+a=true
 TppDemo.SetNextMBDemo(nil)end
 if TppPackList.IsMissionPackLabel"BattleHanger"or TppDemo.IsBattleHangerDemo(TppDemo.GetMBDemoName())then
 local s=string.format("/Assets/tpp/pack/mission2/free/f30050/f30050_hanger_btg%.2d.fpk",TppStory.GetBattleGearDevelopLevel())TppPackList.AddMissionPack(s)do
-local s=378
+local p=378
 if TppStory.HueyHasKantokuGrass()then
-s=379
+p=379
 end
-local p={}table.insert(p,{type="hostage",name="TppHuey2GameObjectLocator",faceId=EnemyFova.INVALID_FOVA_VALUE,bodyId=s})TppEneFova.AddUniqueSettingPackage(p)end
+local s={}table.insert(s,{type="hostage",name="TppHuey2GameObjectLocator",faceId=EnemyFova.INVALID_FOVA_VALUE,bodyId=p})TppEneFova.AddUniqueSettingPackage(s)end
 gvars.f30050_missionPackIndex=2
-elseif s then
+elseif a then
 TppPackList.AddMissionPack"/Assets/tpp/pack/mission2/free/f30050/f30051.fpk"TppPackList.SetMissionPackLabelName"DemoStage"gvars.f30050_missionPackIndex=1
 else
 do
@@ -198,10 +198,18 @@ TppHostage2.SetHostageType{gameObjectType="TppHostage2",hostageType="Mob"}end
 s[65020]={"/Assets/tpp/pack/show/e3_2014/s65020/s65020_area.fpk","/Assets/tpp/pack/location/afgh/pack_common/afgh_script.fpk"}s[65030]={"/Assets/tpp/pack/show/e3_2014/s65030/s65030_area.fpk"}s[65050]={"/Assets/tpp/pack/show/e3_2014/s65050/s65050_area.fpk"}s[65414]={"/Assets/tpp/pack/show/gc_2014/s65414/s65414_area.fpk"}s[65060]=function(p)TppPackList.AddMissionPack"/Assets/tpp/pack/show/tgs_2014/s65060/s65060_area.fpk"TppPackList.AddLocationCommonScriptPack(p)do
 local s="hos_s65060_0000"local s={{type="hostage",name=s,faceId=621,bodyId=111}}TppEneFova.AddUniqueSettingPackage(s)end
 end
-s[65415]={"/Assets/tpp/pack/show/tgs_2014/s65415/s65415_area.fpk"}s[65416]={"/Assets/tpp/pack/show/tgs_2014/s65416/s65416_area.fpk"}s[50050]=function(s)local p=TppEnemy.GetDDSuit()if TppMotherBaseManagement.GetMbsClusterSecurityIsEquipSwimSuit()then
-TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_SWIM_SUIT)elseif p==TppEnemy.FOB_DD_SUIT_SNEAKING then
-TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_SNEAKING)elseif p==TppEnemy.FOB_DD_SUIT_BTRDRS then
-TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_BTRDRS)elseif p==TppEnemy.FOB_PF_SUIT_ARMOR then
+s[65415]={"/Assets/tpp/pack/show/tgs_2014/s65415/s65415_area.fpk"}s[65416]={"/Assets/tpp/pack/show/tgs_2014/s65416/s65416_area.fpk"}s[50050]=function(a)local i=TppEnemy.GetDDSuit()if TppMotherBaseManagement.GetMbsClusterSecurityIsEquipSwimSuit()then
+local p=TppMotherBaseManagement.GetMbsClusterSecuritySwimSuitInfo()local s
+if p==TppMotherBaseManagementConst.SWIM_SUIT_TYPE_1 then
+s=TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_SWIM_SUIT
+elseif p==TppMotherBaseManagementConst.SWIM_SUIT_TYPE_2 then
+s=TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_SWIM_SUIT2
+elseif p==TppMotherBaseManagementConst.SWIM_SUIT_TYPE_3 then
+s=TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_SWIM_SUIT3
+end
+TppPackList.AddMissionPack(s)elseif i==TppEnemy.FOB_DD_SUIT_SNEAKING then
+TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_SNEAKING)elseif i==TppEnemy.FOB_DD_SUIT_BTRDRS then
+TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_BTRDRS)elseif i==TppEnemy.FOB_PF_SUIT_ARMOR then
 TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_ARMOR)else
 TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.DD_SOLDIER_ATTACKER)end
 TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.HELICOPTER)TppPackList.AddMissionPack(TppDefine.MISSION_COMMON_PACK.MTBS_DECOY)if TppEnemy.IsHostageEventFOB()then
@@ -212,13 +220,13 @@ if TppEnemy.IsZombieEventFOB()then
 TppSoldierFace.SetUseZombieFova{enabled=true}end
 if TppEnemy.IsParasiteMetalEventFOB()then
 TppPackList.AddMissionPack"/Assets/tpp/pack/mission2/online/o50050/o50055_parasite_metal.fpk"end
-TppPackList.AddMissionPack"/Assets/tpp/pack/mission2/online/o50050/o50050_additional.fpk"TppPackList.AddLocationCommonScriptPack(s)if TppEnemy.IsSpecialEventFOB()then
+TppPackList.AddMissionPack"/Assets/tpp/pack/mission2/online/o50050/o50050_additional.fpk"TppPackList.AddLocationCommonScriptPack(a)if TppEnemy.IsSpecialEventFOB()then
 TppPackList.AddMissionPack"/Assets/tpp/pack/mission2/online/o50050/o50055_area.fpk"else
-TppPackList.AddDefaultMissionAreaPack(s)end
-TppPackList.AddFOBLayoutPack(s)end
-function a.GetLocationPackagePath(s)local p=p[s]if p then
+TppPackList.AddDefaultMissionAreaPack(a)end
+TppPackList.AddFOBLayoutPack(a)end
+function a.GetLocationPackagePath(a)local s=p[a]if s then
 end
-TppLocation.SetBuddyBlock(s)return p
+TppLocation.SetBuddyBlock(a)return s
 end
 function a.GetMissionPackagePath(p)TppPackList.SetUseDdEmblemFova(p)local a
 if s[p]==nil then

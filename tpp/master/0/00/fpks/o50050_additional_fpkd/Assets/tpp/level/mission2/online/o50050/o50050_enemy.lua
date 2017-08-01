@@ -797,18 +797,22 @@ function this._SetupReinforce( clusterId, sortieSoldierNum )
 	end
 	local canSortieStaffList = mtbs_enemy.GetSecurityStaffIdList(clusterId)
 	local reinforceCount = #canSortieStaffList - svars.fobUsedStaffNum
+
+	
 	local maxReinforceCountFromSecurityRank = this._GetMaxRespawnSoldierNum()
+	
+	if TppNetworkUtil.IsEnableFobDeployDamage() then
+		local damageParams = TppNetworkUtil.GetFobDeployDamageParams()
+		Fox.Log("FobDeployDamage down reinforceCount: dowm:".. tostring(damageParams.reinforce) .."%" )
+		if damageParams.reinforce > 100 then
+			damageParams.reinforce = 100
+		end
+		maxReinforceCountFromSecurityRank = maxReinforceCountFromSecurityRank * ( ( 100 - damageParams.reinforce ) / 100.0 )
+	end
 	if reinforceCount > maxReinforceCountFromSecurityRank then
 		reinforceCount = maxReinforceCountFromSecurityRank
 	end
 	
-	if TppNetworkUtil.IsEnableFobDeployDamage() then
-		local damageParams = TppNetworkUtil.GetFobDeployDamageParams()
-		if ( damageParams.reinforce > 0 ) then
-			Fox.Log("FobDeployDamage no reinforce!!")
-			reinforceCount = 0
-		end
-	end
 	Fox.Log("SetupReinforceNum:" ..tostring(reinforceCount) )
 	local cpId = { type="TppCommandPost2" } 
 	local command = { id = "SetFOBReinforceCount", count=reinforceCount }
