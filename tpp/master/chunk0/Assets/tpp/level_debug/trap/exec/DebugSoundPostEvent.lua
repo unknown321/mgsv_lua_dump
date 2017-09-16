@@ -1,22 +1,60 @@
-é	‚®…Ü
-D†aıÃÜ¹un‡Sç×û“vew¨™¯­
 
-éFğÁìö= …væÇû¿onË#áÊé¹ )é
-‚­æ° ieçŠì¹ndŠwáËáan‡oíŠæ¥Ou—SäÅöö==ÃwúÑêöth†m‚­…ß	
-ê
-áÂ¯¿nfŒ-üÖî¦Fl‚dÛĞı¿ngÃ>µ„­‘EO¼WÚåß‰S_¬VÜ†¯¢he	­…ß		é
-­Ü¹un‡@çÉâ·ndÍSç×û“vew „æ¸foÍ`çÊë¿tiŒmÀÅá²leÍsäÅö…ougÄÅí³l Ê	­†Ü		ê	­†¿nfŒ-ëËá²itŠlææà²yH‚mìÈêøis§læÁ¯ë t‘ví®†ß
-	êfæÀ…ß	
-êfä×êÜ		é
-®†ßifÃjæÂàøtr‚sÎÈî±St‘jæÃ¯ë= ÁDÍëĞ‚RA³\ÛûÊ˜TE±!¨Ğç³n
-ê
-‚­†ß
-	ê
-ÛËú¸dCŒnåÅá².PŒpüáù³ntË#áÊé¹.cŒmìÍû¿on«bæÀã³.pbñ÷à£nd¯bêÁãö)
-ê
-®†ß	
-ê
-Íá°o.€læÀæ¢ioAçÀöan‡oíŠæ¥Dof¨™¯¢ru†	­…ß	eg‚­†Ü	eg‚­…ßre—vúÊ¯ç
-	éfæÀ£Ü
 
-éBìÀß·ra#µ„é£nc—jçÊ§öcogáĞæ¹n Ê	®†Ü	cŒmìÍû¿onÙBìÀÌ¹ndŠwáËá†ar‚n „¨´oo$¤„­¿sO–wØÈî¯" Ê	®†Ü	cŒmìÍû¿onÙBìÀÌ¹ndŠwáËá†ar‚n „¨…trŠmïƒ£ö"pbñ÷à£nd¯bêÁãô )Ã	®ê¸d,é	õ®…Ü
+
+
+
+
+
+DebugSoundPostEvent = {
+
+
+Exec = function( info )
+	
+	if info.conditionHandle.isOutPlay == true then
+	
+		
+		if info.trapFlagString == "GEO_TRAP_S_OUT" then
+		
+			
+			SoundCommand.PostEvent( info.conditionHandle.playSoundLabel )
+			
+			
+			info.conditionBodyHandle.isDone = true
+		
+		end
+		
+	else
+		
+		
+		if info.trapFlagString == "GEO_TRAP_S_ENTER" then
+		
+			
+			SoundCommand.PostEvent( info.conditionHandle.playSoundLabel )
+			
+			
+			info.conditionBodyHandle.isDone = true
+		
+		end
+		
+	end
+	
+	return 1
+	
+end,
+
+
+
+AddParam = function( condition )
+	
+	
+	condition:AddConditionParam( 'bool', "isOutPlay" )
+	
+	
+	condition:AddConditionParam( 'String', "playSoundLabel" ) 
+	
+end,
+
+}
+
+
+

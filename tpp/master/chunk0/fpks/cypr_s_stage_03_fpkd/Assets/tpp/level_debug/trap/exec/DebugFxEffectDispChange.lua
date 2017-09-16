@@ -1,20 +1,86 @@
-æïìäÆ
-D‰‡“‰Š|EfŠ€…šˆmsp¯‡€«a =ÌìäÆRis…‡Š‹acu–˜©hy ÑÅ€›¢gtiƒ‹ÎÎ¨etaÀÅ”‹ª( d…––Âìpre‰ÅÏäì$  åïÆÎì$	lƒ†‡‚ìaff‰†’Îñ$da˜„Ü©©pDa˜„¤¨}Wi˜´‹ªarr‰—ÎÎ¾af ÅïïçÆ
-	…ƒÆ‹ªbec˜ß¯‡mnd£ƒÎÎŠ|Lo„’¾$) ˜ƒ€Æ
-	åïïç¥b d…––À¥wViŸŒ„‚©$==Ì‘”›©$th‰‹ìçÅefŠ€…šöRis…‡Š‹ä-
-	å€Š©mf ˆŒ•âmsI‚³¥fleÌØÛÎ¸vueÌ‘‹¢		å€€ˆ©gt:¥‹‡¿mbl‰ÍÏäÅelŸ€ˆì`isœËvea˜€ÆÓñ$tr™€Æš¤an
-åìï‹ªbec˜ß¥œ©eteÄÌìçÅals‰Œ€Î¨mspÂŒ•ª©wtrƒœÆÓñ$tr™€Æš¤an
-åìï‹ªbec˜ß¢‹¿pro•ÍÏäÅenˆïï‹¢`
-	æììçÆifÌ‘”‹©$==Ì‘”›©$th‰‹ìçÅhoc‰Æ¤mld€ˆÎñ$da˜„Ü©©pCh…‰‚œ©j()æÅÆÎì	fƒ—Æ€à$ch…‰‚Î¥j pŒ”ä$ch…‰‚œ©j )Ì‰äì$  ÌÅÆÎÅDe¨´Aff‰†’ª¥wpC„„ˆ‰©*ViŸŒ„‚©Vec™—•‡ºalyÄÅ…†¥hd,Ì—ƒˆà$diŸ•ÊÎ¸veeÌÌìçÅandæìƒ€¨  ÌÅïä©jd,æïìä‰|ecÌØÆˆ¹jct…ŠˆÆìmnfƒÅÏäÅ	
-åŒ€Î¥jfoÂ‘”¼Bla‹¶’œ¥jg ÑØÆÌ‹AO_¸·§¾“W_E¢±£¼î$th‰‹ìçÅ		æìïª©fugª£ˆªact¨Œ•lan‹€È¸¥wib€€´‹¯qrs…“ƒ‚µ, i‚ƒ‰À¯knd…‘¢Lanˆ‰ƒÀ˜astª¢¸e, …‹€âpraœ§‰ŠµLanˆ‰ƒÂìmnfƒË…¢`it…Šˆ¦­jdl‰ÉÆ‡¢bo.ŠˆŠ¥pio‚­‡€¨he.Ÿ€’¯ hCh…‰‚œ©j )æìïäÅ
-	åŒˆˆ£*co‚š¥knBƒŸ¦­jdl‰ËˆkneÌØÆš¾qe
-åììç©jd
-åïïœ©pur‚Å×äÆandÀïìäÆEdd¼„”¡$= Šˆ¸monÄÅ…¢`it…ŠˆÎå	
-åïï£jdi˜Œ‰€öEdd¯ŠˆŠ¥pio‚µ‡œ­i( Ë‡‰ #, Î–ƒšhlC„ŒŠŠ¾an"ÌÌìç¯knd…‘¢*se˜¤Š‚lilˆ—ƒ€ì9 tƒçÆ	
-å†‰€¨mtiƒ‹Ü¯¨`Co‚š¥knP—‡ƒä$'E‚‘šµHin‡ÂÊÎîPes˜£ª­pa"ÌÌìç¯knd…‘¢*TeŸ‘ –ˆetaÌØÆ€¥h
-	æììç¯knd…‘¢>Adˆ¦‰€¨mtiƒ‹¶¾em(ÌÂ„£h',ÌÇšmsi‰ƒÌì-		æì…¢`it…ŠˆÔ`dCƒ‹‚‡¸mon¼„”¡, 'Š‰‚ë( "…–¯€šmsi‰ƒÌì-	
-å†‰€¨mtiƒ‹Ü¯¨`Co‚š¥knP—‡ƒä$'bƒŠŠÉà$"iŸ¦”‹­pe"ÌÌïçÆco‚š¥kn:­‚­£jdi˜Œ‰€œeraÍÆÉ®kolËÉÆÌ¥wDeŸ‘”µ& )åììç¯knd…‘¢*isºŒ•‡®he ÑÅ€ we
-å†‰€¨mtiƒ‹È‡¿MnV…–Œ a =Ìƒ‡‚¿a
-	ŠˆŠ¥pio‚Ëvea˜€ÆÓìbalŸ€ìç¯knd…‘¢*is¨€•š¾ky ÑÅ€ we
-æ€ˆŠà
-}æï
+
+
+
+
+
+
+
+DebugFxEffectDispChange = {
+
+
+VisibleRecursively = function( data, ref, disp, tree )
+    	
+    	local effect = data:GetDataBodyWithReferrer( ref )
+		
+	
+	if effect:IsKindOf( FxLocator ) then
+	
+		
+		if disp.isVisible == true then
+			effect:Visible()
+		elseif disp.isInVisible == true then
+			effect:Invisible()
+		elseif disp.isCreate == true then
+			effect:Create()
+		elseif disp.isDestroy == true then
+			effect:Destroy()
+		end
+	end
+	
+	
+	
+	if tree == true then
+		local children = data:GetChildren()
+    		for n, child in pairs( children ) do
+        		DebugFxEffectDispChange.VisibleRecursively( child, ref, disp, tree )
+		end
+	end
+    	
+end,
+
+
+
+Exec = function( info )
+	
+	
+	if info.trapFlagString == "GEO_TRAP_S_ENTER" then
+		
+		
+		DebugFxEffectDispChange.VisibleRecursively( info.conditionHandle.TestFxData, info.trapBodyHandle, info.conditionHandle, info.conditionHandle.setAllChildren )
+		
+		
+		info.conditionBodyHandle.isDone = true
+		
+	end
+	
+	return 1
+
+end,
+
+
+
+AddParam = function( condition )
+	
+	
+	condition:AddConditionParam( 'bool', "setAllChildren" )
+	condition.setAllChildren = true	
+
+	
+	condition:AddConditionParam( 'EntityLink', "TestFxData" )
+	condition.TestFxData = nil
+	
+	
+	condition:AddConditionParam( 'bool', "isVisible" )		
+	condition:AddConditionParam( 'bool', "isInVisible" )	
+	condition:AddConditionParam( 'bool', "isCreate" )		
+	condition:AddConditionParam( 'bool', "isDestroy" )		
+	condition.isVisible = false
+	condition.isInVisible = false
+	condition.isCreate = false
+	condition.isDestroy = false
+
+end,
+
+}
+
+

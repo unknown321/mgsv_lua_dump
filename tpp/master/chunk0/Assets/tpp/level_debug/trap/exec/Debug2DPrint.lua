@@ -1,35 +1,84 @@
-…®€ Ä
 
-ËòÆÿMüDPışÊş
-ó {…®€ ddßöÖëGî= éâÊé^§on§·ÇåDªitæøÊªÄ	
-†­æE­al¯øÊïy«coáó„·
-ø0
-†­€#­onëşĞãE :AëóçåDªitæøÊÚK¼am§·ƒèE¡l'£·†åD¢ySçøÓİB«nIáÃÖëZì )…ÇåDªitæøÊ¤E lyÜÿËı}¦enÆùğøK¾ =¯ñÅæY«
-	…®ƒI¡ndæãÍåDôAdëÔËäN§tiàùôëX¯m(¯°÷şX§ng¨»„¨^«xt­·€#­onëşĞãE .têïĞªî""…®ƒ ÇcoáóÍşC¡n:ÎóÀÉE diûşËäz¯raâ¿„­_§nt¼¥ƒ¦
-ìte÷ãèãL«" ¦­éE diûşËäºexûÛÍìOî= àùÁÙO­onë·ªÄ	
-†­éE diûşËäddÌøÊîCºioáÇÅøK£( ¨âÍä^ı2'£·†şO¶tPàäü¨
-ç
-	ìøÊîCºioá¹ĞïRºPoüÏ„·
-û0
-†­€#­onëşĞãE :AëóçåDªitæøÊÚK¼am§·ƒÿC t3½°ˆªºexûÇËùsì )…ÇåDªitæøÊ¤^«xtßø×Ó
-ó 1º§®ƒ Ç
-	ìøÊîCºioá­åîNonëşĞãE PaıöÉ¢
-éflàöĞ­î"têïĞÙC´e"¯¾®ƒI¡ndæãÍåDàte÷ã÷ãP« =¯¥”€#Ä	
-†ôËäN§tiàùËNªCoáóÍşC¡nPîåÅçî'CàûËøâ "ûòÜşi¡loıµ„£ ÇcoáóÍşC¡n.ûòÜşi¡loı·™ªi¡loıì„»ş, ¾¹”¦
-ÿ.0£·•¤î}
-†ÁäNâ
 
-…®ÏR«c ²·ÂÿD­tiàùŒªC fo¯¾®€#¢ocîû„ì_ ctæøÊªN§spãöİŞO¶t(¯ãÁò^‚ifê·€#Ç
-	†ûËéK¢ têïĞÎKºa ²·×şX§ng¡ğ×ÿHæ iáñË¤I¡ndæãÍåD†anëûÁ¤^«xt£·†Öv ",¯µøäî)
-†®ƒ#Ä		ÈåÜÎO¬ug¡ÇÖãDº2D¯ì®ƒ#Çliéò­·
-ºexûÛÍìOâ
-	†Üƒ#ó iáñË¤I¡ndæãÍåD†anëûÁ¤^«xtßø×ÒÄ		†î­ƒîinéøŠéE diûşËäb¯ndãòŠşO¶tPàäı¦ Ç		üşŞï#ó iáñË¤I¡ndæãÍåD†anëûÁ¤^«xtÜşŞïÄ		†ôËæE¼	=¯şÊìEàcoáóÍşC¡nHîùÀæOàte÷ãçåF¡r,…­ƒK¼gs†ª„ñ
-ºexûÓÅşKî}
-†Ù€#«nd…­€#§f(¯şÊìEàcoáóÍşC¡nHîùÀæOàonãî÷âE¹Whêùíä~¼ap¯ª™ª^¼ue¯¾„şB«n
-†ÍìîinéøŠşX¯pFãöÃÙ^¼inè·™·
-ìGEÀÈğØk_SĞŞêÙcŠE"¯¾„şB«n
-†­îC½plîîğïRº( ¾·€#Çenë­ïF½eié¿„ãD¨o.ûåÅúl¢agÜãÖãD© =²·†Ío_TİÖôÕy‘ENÛÒö¨
-ç tçòÊ€#ÇdiüçÈëSšexû¿„ãD¨o.ìøÊîCºioáßÅäN¢e.ûòÜşf§fe¯¾®ƒ#Ä		…­ãD¨o.ìøÊîCºioáÕËîS†anëûÁ¤C½Doáò„·
-ºruê­ïDª
-	…Öï^»rn¯¦®ïDª,
-…ê
+
+
+
+
+
+
+Debug2DPrint = {
+
+
+
+
+AddParam = function( condition )
+	
+	
+	local oneSecond = 60
+	
+	
+	condition:AddConditionParam( 'bool', "onlyShowWhenInTrap" )
+	condition.onlyShowWhenInTrap = false
+	
+	
+	condition:AddConditionParam( 'String', "text" )
+	condition.text = ""
+	
+	
+	condition:AddConditionParam( 'uint32', "textLife" )
+	condition.textLife = oneSecond * 5
+	
+	
+	condition:AddConditionParam( 'uint32', "textPosX" )
+	condition.textPosX = 50
+	
+	
+	condition:AddConditionParam( 'uint32', "textPosY" )
+	condition.textPosY = 150
+	
+	
+	condition:AddConditionParam( 'float', "textSize" )
+	condition.textSize = 20
+	
+	
+	condition:AddConditionParam( 'Color', "textColor" )
+	condition.textColor = Color{ 1.0, 1.0, 1.0, 1.0 }
+	
+end,
+
+
+
+
+Exec = function( info )
+
+	local function displayText( textLife )
+		
+		local textData = string.gsub( info.conditionHandle.text, "\\n", "\n" )
+		
+		
+		GrxDebug.Print2D {
+			life	= textLife,
+			x		= info.conditionHandle.textPosX,
+			y		= info.conditionHandle.textPosY,
+			size	= info.conditionHandle.textSize,
+			color	= info.conditionHandle.textColor,
+			args	= { textData }
+		}
+	end
+
+	
+	if( info.conditionHandle.onlyShowWhenInTrap == true ) then
+		if( info.trapFlagString == "GEO_TRAP_S_INSIDE" ) then
+			displayText( 1 )
+		end
+	elseif( info.trapFlagString == "GEO_TRAP_S_ENTER" ) then
+		displayText( info.conditionHandle.textLife )
+		
+		
+		info.conditionBodyHandle.isDone = true
+	end
+	
+	return 1
+end,
+
+}
