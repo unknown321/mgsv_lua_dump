@@ -1,4 +1,7 @@
 # mgsv_lua_dump
+
+## Deprecated in favor of https://github.com/unknown321/tpp-tracking
+
 This is a dump of mgsv lua code. This repository was made to keep track of TPP updates, nothing more. 
 
 I also have other MGSV-related repos:
